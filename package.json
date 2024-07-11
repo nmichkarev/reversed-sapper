@@ -1,0 +1,16 @@
+{
+  "name": "sapper-reverted",
+  "version": "1.0.0",
+  "description": "The Sapper Reverted game",
+  "main": "dist/index.js",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build -w ./packages/backend && npm run build -w ./packages/frontend",
+    "start": "npm run start:prod -w ./packages/backend"
+  },
+  "author": "nmichkarev@mail.ru",
+  "license": "ISC"
+}
